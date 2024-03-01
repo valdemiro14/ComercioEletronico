@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+    header h2{
+        font-family: arial;
+        color: cornflowerblue;
+    }
+
+    header form{
+        padding: 0;
+        background-color: white;
+        padding: 5px;
+        height: 23px;
+    }
+
+        header form input{
+            width: 300px;
+            margin: 0;
+            border: none;
+        }
+
+        header form button{
+            margin: 0;
+            border: none;
+            background-color: white;
+            border-left: 2.5px solid #ccc;
+            padding: 4px;
+            cursor: pointer;
+        }
+
+    header nav{
+        width: 250px;
+    }
+
+        header nav ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            font-family: arial;
+        }
+
+            header nav ul li:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+footer{
+    background-color: cornflowerblue;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+
+    footer p{
+        text-align: center;
+        font-family: arial;
+    }
