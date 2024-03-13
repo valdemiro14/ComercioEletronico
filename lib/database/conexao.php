@@ -1,19 +1,20 @@
 <?php
 
-    // class que permite a conexao
-    abstract class conexao
+    // classe que permite a conexao
+	abstract class conexao
     {
-        private static $con;
+		private static $con;
 
-        // metodo que vai entregar a conexao ao banco de dados, fazendo o pedido via objeto PDO
-        public static function pegandoConexao()
+		// metodo que vai entregar a conexão com o banco de dados, fazendo o pedido via objeto PDO
+		public static function pegandoConexao()
         {
-            if(self::$con == null){
-                self::$con new PDO('mysql: host=localhost; dbname=marktplace_db','root','');
-            }
+			if (self::$con == null) 
+            {
+				self::$con = new PDO('mysql: host=localhost; dbname=comercioeletronico_db;','root','');
+			}
 
-            return self::$con;
-        }
-    }
+			return self::$con;
+		}
+	}
 
 ?>

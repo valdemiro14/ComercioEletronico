@@ -1,5 +1,5 @@
 <h1>Formulário de cadastramento de usúario</h3>
-<form style="width: 400px;border: 1px solid #ccc;" action="" method="post">
+<form style="width: 400px;border: 1px solid #ccc;" action="?pagina=cadastrarUsuario" method="post">
     <label for="nome">nome</label>
     <input type="text" name="nome">
     <hr>
@@ -8,8 +8,8 @@
     <input type="text" name="sobrenome">
     <hr>
 
-    <label for="data">nome</label>
-    <input type="date" name="data">
+    <label for="data">data de nascimento</label>
+    <input type="date" name="niver">
     <hr>
 
     <label for="numero">número de telemovel</label>
@@ -18,6 +18,14 @@
 
     <label for="mail">e-mail</label>
     <input type="mail" name="mail">
+    <hr>
+
+    <label for="senha">senha</label>
+    <input type="texto" name="senha">
+    <hr>
+
+    <label for="confirmaSenha">Confirma a senha</label>
+    <input type="password" name="confirmaSenha">
     <hr>
 
     <button>cadastrar</button>

@@ -14,9 +14,9 @@
             if (method_exists('paginasUsuario',$pagina))
             {
                 return "paginasUsuario";
-            }elseif(method_exists('paginasAdm',$pagina))
+            }elseif(method_exists('crudSistema',$pagina))
             {
-                return "paginasAdm";
+                return "crudSistema";
             }else
             {
                 $this->acao = "erroPedido";
